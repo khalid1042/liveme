@@ -104,7 +104,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0e14] text-gray-100 flex flex-col font-sans selection:bg-purple-500 selection:text-white">
+    <div className="min-h-screen bg-[#0b0e14] text-gray-100 flex flex-col font-sans selection:bg-purple-500 selection:text-white overflow-x-hidden w-full max-w-full relative">
       <Navbar
         currentView={currentView}
         setCurrentView={setCurrentView}
@@ -115,10 +115,10 @@ export function App() {
         setSearchQuery={setSearchQuery}
       />
 
-      <div className="flex-1 flex max-w-7xl w-full mx-auto px-3 sm:px-4 py-4 sm:py-6 gap-6 pb-20 lg:pb-6">
+      <div className="flex-1 flex max-w-7xl w-full mx-auto px-3 sm:px-4 py-4 sm:py-6 gap-6 pb-20 lg:pb-6 overflow-x-hidden">
         <Sidebar currentView={currentView} setCurrentView={setCurrentView} />
 
-        <main className="flex-1 min-w-0">
+        <main className="flex-1 min-w-0 overflow-x-hidden w-full max-w-full">
           {(currentView === 'home' || currentView === 'discover') && (
             <HomeView
               onSelectStream={handleSelectStream}

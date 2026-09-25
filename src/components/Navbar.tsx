@@ -41,8 +41,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-50 w-full glass-panel border-b border-white/10 px-3 sm:px-6 py-2.5 sm:py-3.5 backdrop-blur-2xl">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-6">
+      <header className="sticky top-0 z-50 w-full max-w-full overflow-x-hidden glass-panel border-b border-white/10 px-2 sm:px-6 py-2.5 sm:py-3.5 backdrop-blur-2xl">
+        <div className="max-w-7xl w-full mx-auto flex items-center justify-between gap-1.5 sm:gap-6 overflow-hidden">
           
           {/* Left: Mobile Menu Toggle & Brand Logo */}
           <div className="flex items-center gap-2 sm:gap-4">
