@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Video, Coins, Bell, Shield, Sparkles, X } from 'lucide-react';
 import type { NotificationItem } from '../types';
+import { InstallPWA } from './InstallPWA';
 
 interface NavbarProps {
   currentView: string;
@@ -139,6 +140,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Video className="w-4 h-4" />
             <span>Go Live</span>
           </button>
+
+          {/* Download App PWA Button */}
+          <InstallPWA />
 
           {/* Notifications */}
           <div className="relative">
